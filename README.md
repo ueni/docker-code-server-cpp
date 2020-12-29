@@ -7,3 +7,6 @@ Extended Code Server containing:
  * gdb
  * gcc-7.3
  * make
+ * htop
+ * nmon
+ * vim

@@ -14,7 +14,10 @@ RUN \
         gdb \
         gcc-7 g++-7 \
         valgrind \
-        nginx && \
+        nginx \
+        vim \
+        htop \
+        nmon && \
     apt-get clean && \
     rm -rf \
         /tmp/* \
