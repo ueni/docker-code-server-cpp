@@ -3,6 +3,8 @@ Extended Code Server containing:
 
  * libfcgi-dev
  * valgrind
+ * clang
+ * cppcheck
  * lldb
  * gdb
  * gcc-7.3
@@ -10,3 +12,9 @@ Extended Code Server containing:
  * htop
  * nmon
  * vim
+
+ Pre-Installed vscode extentions:
+
+ * Git Graph
+ * C/C++
+ * C/C++ Advanced Lint

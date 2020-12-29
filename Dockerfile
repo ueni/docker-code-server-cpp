@@ -14,6 +14,8 @@ RUN \
         gdb \
         gcc-7 g++-7 \
         valgrind \
+        clang \
+        cppcheck \
         nginx \
         vim \
         htop \
@@ -29,6 +31,10 @@ RUN \
     update-alternatives --install /usr/bin/gcc-ar gcc-ar /usr/bin/gcc-ar-7 30 && \
     update-alternatives --install /usr/bin/gcc-nm gcc-nm /usr/bin/gcc-nm-7 30 && \
     update-alternatives --install /usr/bin/gcc-ranlib gcc-ranlib /usr/bin/gcc-ranlib-7 30
+
+RUN code-server --install-extension ms-vscode.cpptools; \
+    code-server --install-extension jbenden.c-cpp-flylint; \
+    code-server --install-extension mhutchie.git-graph
 
 VOLUME /var/run/docker.sock
 
