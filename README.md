@@ -9,9 +9,12 @@ Extended Code Server containing:
  * gdb
  * gcc-7.3
  * make
+ * cmake
  * htop
  * nmon
  * vim
+ * wget
+ * zip
 
  Pre-Installed vscode extentions:
 

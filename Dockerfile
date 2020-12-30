@@ -11,6 +11,7 @@ RUN \
     apt-get install -y \
         libfcgi-dev \
         make \
+        cmake \
         gdb \
         gcc-7 g++-7 \
         valgrind \
@@ -18,6 +19,8 @@ RUN \
         cppcheck \
         nginx \
         vim \
+        zip \
+        wget \
         htop \
         nmon && \
     apt-get clean && \
