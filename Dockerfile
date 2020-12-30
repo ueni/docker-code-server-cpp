@@ -22,6 +22,7 @@ RUN \
         zip \
         wget \
         htop \
+        graphviz \
         nmon && \
     apt-get clean && \
     rm -rf \

@@ -15,6 +15,7 @@ Extended Code Server containing:
  * vim
  * wget
  * zip
+ * graphviz
 
  Pre-Installed vscode extentions:
 
