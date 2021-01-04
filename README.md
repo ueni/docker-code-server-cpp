@@ -7,7 +7,7 @@ Extended Code Server containing:
  * cppcheck
  * lldb
  * gdb
- * gcc-7.3
+ * gcc-7
  * make
  * cmake
  * htop
@@ -23,3 +23,8 @@ Extended Code Server containing:
  * Git Graph
  * C/C++
  * C/C++ Advanced Lint
+
+
+Further documentation:
+
+ * Base-Image: https://github.com/linuxserver/docker-code-server

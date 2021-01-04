@@ -37,9 +37,11 @@ RUN \
     update-alternatives --install /usr/bin/gcc-nm gcc-nm /usr/bin/gcc-nm-7 30 && \
     update-alternatives --install /usr/bin/gcc-ranlib gcc-ranlib /usr/bin/gcc-ranlib-7 30
 
-RUN code-server --install-extension ms-vscode.cpptools; \
-    code-server --install-extension jbenden.c-cpp-flylint; \
-    code-server --install-extension mhutchie.git-graph
+USER ${PUID}:${PGID}
+RUN INSTALL="code-server --extensions-dir /config/extensions --install-extension "; \
+    ${INSTALL} ms-vscode.cpptools && \
+    ${INSTALL} jbenden.c-cpp-flylint && \
+    ${INSTALL} mhutchie.git-graph
 
 VOLUME /var/run/docker.sock
 
