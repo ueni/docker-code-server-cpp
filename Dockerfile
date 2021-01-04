@@ -23,7 +23,8 @@ RUN \
         wget \
         htop \
         graphviz \
-        nmon && \
+        nmon \
+        iputils-ping && \
     apt-get clean && \
     rm -rf \
         /tmp/* \

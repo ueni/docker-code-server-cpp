@@ -16,6 +16,7 @@ Extended Code Server containing:
  * wget
  * zip
  * graphviz
+ * iputils-ping
 
  Pre-Installed vscode extentions:
 
